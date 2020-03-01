@@ -124,7 +124,7 @@ class ClassViewController: SwipeTableViewController {
         }
     }
     
-    // MARK: - Table view data source
+    // MARK: - TableViewDataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return classArray?.count ?? 1
@@ -138,5 +138,15 @@ class ClassViewController: SwipeTableViewController {
         cell.textLabel?.text = classToDisplay?.title ?? "No class added yet"
         
         return cell
+    }
+    
+    //MARK: - TableViewManipulation
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToNotes", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! NotesViewController
     }
 }

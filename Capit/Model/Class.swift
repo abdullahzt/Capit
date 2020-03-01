@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Class: Object {
+    @objc dynamic var title: String = ""
+    let notes = List<Note>()
+}

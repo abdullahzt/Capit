@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		18353FC32409757600AB5AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18353FC22409757600AB5AAC /* AppDelegate.swift */; };
 		18353FC52409757600AB5AAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18353FC42409757600AB5AAC /* SceneDelegate.swift */; };
-		18353FC72409757600AB5AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18353FC62409757600AB5AAC /* ViewController.swift */; };
 		18353FCA2409757600AB5AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18353FC82409757600AB5AAC /* Main.storyboard */; };
 		18353FCC2409757A00AB5AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18353FCB2409757A00AB5AAC /* Assets.xcassets */; };
 		18353FCF2409757A00AB5AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18353FCD2409757A00AB5AAC /* LaunchScreen.storyboard */; };
+		18353FD72409825D00AB5AAC /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18353FD62409825D00AB5AAC /* ClassViewController.swift */; };
+		18515988240A21A8005FE144 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515987240A21A8005FE144 /* Note.swift */; };
+		1851598A240A221F005FE144 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515989240A221F005FE144 /* Class.swift */; };
+		1851598C240A2440005FE144 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851598B240A2440005FE144 /* NotesViewController.swift */; };
+		1851598F240A456D005FE144 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1851598E240A456C005FE144 /* RobotoMono-Medium.ttf */; };
+		18515991240A457F005FE144 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18515990240A457F005FE144 /* RobotoMono-Bold.ttf */; };
+		187C8BBE240AC743009ACAAC /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C8BBD240AC743009ACAAC /* SwipeTableViewController.swift */; };
+		84F0BE06C76CFE8DA67C0CD2 /* Pods_Capit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8719513AB61E6D413CF28AC /* Pods_Capit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18353FBF2409757600AB5AAC /* Capit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18353FC22409757600AB5AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18353FC42409757600AB5AAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18353FC62409757600AB5AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18353FC92409757600AB5AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18353FCB2409757A00AB5AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18353FCE2409757A00AB5AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18353FD02409757A00AB5AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18353FD62409825D00AB5AAC /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		18515987240A21A8005FE144 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		18515989240A221F005FE144 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		1851598B240A2440005FE144 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		1851598E240A456C005FE144 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
+		18515990240A457F005FE144 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
+		187C8BBD240AC743009ACAAC /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		72CEC6AE7E32BF0C4EDDE832 /* Pods-Capit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capit.debug.xcconfig"; path = "Target Support Files/Pods-Capit/Pods-Capit.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B5050BFD17C481AA96D1C2 /* Pods-Capit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capit.release.xcconfig"; path = "Target Support Files/Pods-Capit/Pods-Capit.release.xcconfig"; sourceTree = "<group>"; };
+		C8719513AB61E6D413CF28AC /* Pods_Capit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F0BE06C76CFE8DA67C0CD2 /* Pods_Capit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				18353FC12409757600AB5AAC /* Capit */,
 				18353FC02409757600AB5AAC /* Products */,
+				6322C4D2AF3B91C59C44F175 /* Pods */,
+				1B65D2022FE90C66D72E0061 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +77,52 @@
 			children = (
 				18353FC22409757600AB5AAC /* AppDelegate.swift */,
 				18353FC42409757600AB5AAC /* SceneDelegate.swift */,
-				18353FC62409757600AB5AAC /* ViewController.swift */,
+				18515986240A2134005FE144 /* Model */,
+				1851598D240A2470005FE144 /* Controller */,
 				18353FC82409757600AB5AAC /* Main.storyboard */,
 				18353FCB2409757A00AB5AAC /* Assets.xcassets */,
 				18353FCD2409757A00AB5AAC /* LaunchScreen.storyboard */,
 				18353FD02409757A00AB5AAC /* Info.plist */,
+				1851598E240A456C005FE144 /* RobotoMono-Medium.ttf */,
+				18515990240A457F005FE144 /* RobotoMono-Bold.ttf */,
 			);
 			path = Capit;
+			sourceTree = "<group>";
+		};
+		18515986240A2134005FE144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18515989240A221F005FE144 /* Class.swift */,
+				18515987240A21A8005FE144 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1851598D240A2470005FE144 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18353FD62409825D00AB5AAC /* ClassViewController.swift */,
+				1851598B240A2440005FE144 /* NotesViewController.swift */,
+				187C8BBD240AC743009ACAAC /* SwipeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B65D2022FE90C66D72E0061 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8719513AB61E6D413CF28AC /* Pods_Capit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6322C4D2AF3B91C59C44F175 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72CEC6AE7E32BF0C4EDDE832 /* Pods-Capit.debug.xcconfig */,
+				C0B5050BFD17C481AA96D1C2 /* Pods-Capit.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18353FD32409757A00AB5AAC /* Build configuration list for PBXNativeTarget "Capit" */;
 			buildPhases = (
+				C7E12C0F65736C9EB2DC3ABB /* [CP] Check Pods Manifest.lock */,
 				18353FBB2409757600AB5AAC /* Sources */,
 				18353FBC2409757600AB5AAC /* Frameworks */,
 				18353FBD2409757600AB5AAC /* Resources */,
+				6E3CB5B9B0CC3E29EB3F081B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18353FCF2409757A00AB5AAC /* LaunchScreen.storyboard in Resources */,
+				18515991240A457F005FE144 /* RobotoMono-Bold.ttf in Resources */,
+				1851598F240A456D005FE144 /* RobotoMono-Medium.ttf in Resources */,
 				18353FCC2409757A00AB5AAC /* Assets.xcassets in Resources */,
 				18353FCA2409757600AB5AAC /* Main.storyboard in Resources */,
 			);
@@ -133,14 +195,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E3CB5B9B0CC3E29EB3F081B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capit/Pods-Capit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capit/Pods-Capit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capit/Pods-Capit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E12C0F65736C9EB2DC3ABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18353FBB2409757600AB5AAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18353FC72409757600AB5AAC /* ViewController.swift in Sources */,
 				18353FC32409757600AB5AAC /* AppDelegate.swift in Sources */,
 				18353FC52409757600AB5AAC /* SceneDelegate.swift in Sources */,
+				1851598C240A2440005FE144 /* NotesViewController.swift in Sources */,
+				187C8BBE240AC743009ACAAC /* SwipeTableViewController.swift in Sources */,
+				18353FD72409825D00AB5AAC /* ClassViewController.swift in Sources */,
+				1851598A240A221F005FE144 /* Class.swift in Sources */,
+				18515988240A21A8005FE144 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +390,12 @@
 		};
 		18353FD42409757A00AB5AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CEC6AE7E32BF0C4EDDE832 /* Pods-Capit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Capit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +409,12 @@
 		};
 		18353FD52409757A00AB5AAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B5050BFD17C481AA96D1C2 /* Pods-Capit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Capit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

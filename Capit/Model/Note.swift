@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Note: Object {
+    @objc dynamic var text: String = ""
+    @objc dynamic var date: Date?
+    var parentClass = LinkingObjects(fromType: Class.self, property: "notes")
+}
