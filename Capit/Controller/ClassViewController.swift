@@ -148,5 +148,9 @@ class ClassViewController: SwipeTableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! NotesViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedClass = classArray?[indexPath.row]
+        }
     }
 }

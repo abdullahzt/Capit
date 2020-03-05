@@ -7,84 +7,113 @@
 //
 
 import UIKit
+import RealmSwift
 
 class NotesViewController: SwipeTableViewController {
-
+    
+    let realm = try! Realm()
+    var notesArray: Results<Note>?
+    
+    var selectedClass: Class? {
+        didSet {
+            loadItems()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    //MARK: - AddingToTableView
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Create a new Note", message: nil, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Create Note", style: .default) { (action) in
+            
+            
+            let newNote = Note()
+            newNote.title = textField.text!
+            
+            self.save(note: newNote)
+            
+            
+            
+            
+            self.tableView.reloadData()
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Add new Class"
+            textField = alertTextField
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+            
+            alert.dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
-
+    
+    //MARK: - TableViewManipulation
+    
+    func loadItems() {
+        
+        notesArray = selectedClass?.notes.sorted(byKeyPath: "dateCreated")
+        
+        tableView.reloadData()
+    }
+    
+    func save(note: Note) {
+        do {
+            try realm.write {
+                if let currentClass = selectedClass {
+                    currentClass.notes.append(note)
+                }
+                realm.add(note)
+            }
+        } catch {
+            print("Error saving new note: \(error)")
+        }
+    }
+    
+    //MARK: - deleteDataFromTable
+    override func updateModel(at indexPath: IndexPath) {
+        //        handle action by updating model with deletion
+        do {
+            try self.realm.write {
+                if let notes = self.notesArray {
+                    self.realm.delete(notes[indexPath.row])
+                    //                    self.animatedTableViewReload()
+                }
+                
+            }
+        } catch {
+            print("Error deleting data \(error)")
+        }
+    }
+    
+    //MARK: - tableViewDataSource
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return notesArray?.count ?? 1
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        let noteToDisplay = notesArray?[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "RobotoMono-Medium", size: 30)
+        cell.textLabel?.text = noteToDisplay?.title ?? "No class added yet"
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
