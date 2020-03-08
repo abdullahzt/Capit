@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,10 +75,47 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="IQI-WF-d4e" kind="show" identifier="goToNote" id="TJF-Ds-g3y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSy-9J-zyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2641" y="119"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="hWt-qF-F3A">
+            <objects>
+                <viewController id="IQI-WF-d4e" customClass="NoteViewController" customModule="Capit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfu-te-RLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-vl-vpK">
+                                <rect key="frame" x="20" y="140" width="374" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U3O-ln-sDI" firstAttribute="trailing" secondItem="d5B-vl-vpK" secondAttribute="trailing" constant="20" id="MtI-Hu-n71"/>
+                            <constraint firstItem="d5B-vl-vpK" firstAttribute="bottom" secondItem="U3O-ln-sDI" secondAttribute="bottom" id="n4X-Ed-pfY"/>
+                            <constraint firstItem="d5B-vl-vpK" firstAttribute="leading" secondItem="U3O-ln-sDI" secondAttribute="leading" constant="20" id="rmI-lW-XKS"/>
+                            <constraint firstItem="d5B-vl-vpK" firstAttribute="top" secondItem="U3O-ln-sDI" secondAttribute="top" id="rsa-ha-3I8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U3O-ln-sDI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mfH-FH-ym7"/>
+                    <connections>
+                        <outlet property="noteTextView" destination="d5B-vl-vpK" id="g2z-35-BtD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqj-u7-eat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.0000000000005" y="119.86607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QpX-KI-8za">

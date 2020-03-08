@@ -65,6 +65,7 @@ class NotesViewController: SwipeTableViewController {
     //MARK: - TableViewManipulation
     
     func loadItems() {
+        self.title = selectedClass?.title
         
         notesArray = selectedClass?.notes.sorted(byKeyPath: "dateCreated")
         
@@ -114,6 +115,21 @@ class NotesViewController: SwipeTableViewController {
         cell.textLabel?.text = noteToDisplay?.title ?? "No class added yet"
         
         return cell
+    }
+    
+    //MARK: - tableViewManipulation
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToNote", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! NoteViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedNote = notesArray?[indexPath.row]
+        }
+        
     }
     
 }
