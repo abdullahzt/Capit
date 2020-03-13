@@ -9,6 +9,8 @@
 import UIKit
 import SwipeCellKit
 
+//Class to make table view cells swipeable.
+
 class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     override func viewDidLoad() {

@@ -20,6 +20,7 @@
 		1851598F240A456D005FE144 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1851598E240A456C005FE144 /* RobotoMono-Medium.ttf */; };
 		18515991240A457F005FE144 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18515990240A457F005FE144 /* RobotoMono-Bold.ttf */; };
 		187C8BBE240AC743009ACAAC /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C8BBD240AC743009ACAAC /* SwipeTableViewController.swift */; };
+		18AAEFF1241BDFA4004C3821 /* TextRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAEFF0241BDFA4004C3821 /* TextRecognitionManager.swift */; };
 		84F0BE06C76CFE8DA67C0CD2 /* Pods_Capit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8719513AB61E6D413CF28AC /* Pods_Capit.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		1851598E240A456C005FE144 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		18515990240A457F005FE144 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		187C8BBD240AC743009ACAAC /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		18AAEFF0241BDFA4004C3821 /* TextRecognitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionManager.swift; sourceTree = "<group>"; };
 		72CEC6AE7E32BF0C4EDDE832 /* Pods-Capit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capit.debug.xcconfig"; path = "Target Support Files/Pods-Capit/Pods-Capit.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B5050BFD17C481AA96D1C2 /* Pods-Capit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capit.release.xcconfig"; path = "Target Support Files/Pods-Capit/Pods-Capit.release.xcconfig"; sourceTree = "<group>"; };
 		C8719513AB61E6D413CF28AC /* Pods_Capit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +83,7 @@
 				18353FC42409757600AB5AAC /* SceneDelegate.swift */,
 				18515986240A2134005FE144 /* Model */,
 				1851598D240A2470005FE144 /* Controller */,
-				18353FC82409757600AB5AAC /* Main.storyboard */,
+				18AAEFEF241BDEEC004C3821 /* View */,
 				18353FCB2409757A00AB5AAC /* Assets.xcassets */,
 				18353FCD2409757A00AB5AAC /* LaunchScreen.storyboard */,
 				18353FD02409757A00AB5AAC /* Info.plist */,
@@ -96,6 +98,7 @@
 			children = (
 				18515989240A221F005FE144 /* Class.swift */,
 				18515987240A21A8005FE144 /* Note.swift */,
+				18AAEFF0241BDFA4004C3821 /* TextRecognitionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +112,14 @@
 				1848AABA2414B9CE0022D1DB /* NoteViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AAEFEF241BDEEC004C3821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18353FC82409757600AB5AAC /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1B65D2022FE90C66D72E0061 /* Frameworks */ = {
@@ -247,6 +258,7 @@
 			files = (
 				1848AABB2414B9CE0022D1DB /* NoteViewController.swift in Sources */,
 				18353FC32409757600AB5AAC /* AppDelegate.swift in Sources */,
+				18AAEFF1241BDFA4004C3821 /* TextRecognitionManager.swift in Sources */,
 				18353FC52409757600AB5AAC /* SceneDelegate.swift in Sources */,
 				1851598C240A2440005FE144 /* NotesViewController.swift in Sources */,
 				187C8BBE240AC743009ACAAC /* SwipeTableViewController.swift in Sources */,

@@ -108,7 +108,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U3O-ln-sDI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mfH-FH-ym7"/>
+                    <navigationItem key="navigationItem" id="mfH-FH-ym7">
+                        <barButtonItem key="rightBarButtonItem" image="camera.on.rectangle" catalog="system" id="NTT-r7-vQp">
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="IQI-WF-d4e" id="k4n-fk-VZp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="noteTextView" destination="d5B-vl-vpK" id="g2z-35-BtD"/>
                     </connections>
@@ -136,4 +142,7 @@
             <point key="canvasLocation" x="850.72463768115949" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.on.rectangle" catalog="system" width="64" height="48"/>
+    </resources>
 </document>
