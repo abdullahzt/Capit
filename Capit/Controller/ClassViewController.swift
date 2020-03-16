@@ -29,28 +29,6 @@ class ClassViewController: SwipeTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        guard let navBar = navigationController?.navigationBar else {fatalError("Navigation Controller does not exist.")}
-        
-        let color = UIColor(hexString: "#5b8c85")!
-        
-        if #available(iOS 13.0, *) {
-            let appearance = UINavigationBarAppearance().self
-            
-            appearance.backgroundColor = color
-            appearance.largeTitleTextAttributes = [
-                NSAttributedString.Key.foregroundColor: ContrastColorOf(color, returnFlat: true)]
-            
-            navBar.standardAppearance = appearance
-            navBar.compactAppearance = appearance
-            navBar.scrollEdgeAppearance = appearance
-            navBar.tintColor = ContrastColorOf(color, returnFlat: true)
-            
-        } else {
-            navBar.barTintColor = color
-            navBar.tintColor = ContrastColorOf(color, returnFlat: true)
-            navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: ContrastColorOf(color, returnFlat: true)]
-        }
     }
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {

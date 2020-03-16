@@ -13,6 +13,8 @@
 		18353FCC2409757A00AB5AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18353FCB2409757A00AB5AAC /* Assets.xcassets */; };
 		18353FCF2409757A00AB5AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18353FCD2409757A00AB5AAC /* LaunchScreen.storyboard */; };
 		18353FD72409825D00AB5AAC /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18353FD62409825D00AB5AAC /* ClassViewController.swift */; };
+		18379361241F6BF500DC5134 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379360241F6BF500DC5134 /* RoundButton.swift */; };
+		18379363241F84AD00DC5134 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18379362241F84AD00DC5134 /* MainViewController.swift */; };
 		1848AABB2414B9CE0022D1DB /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848AABA2414B9CE0022D1DB /* NoteViewController.swift */; };
 		18515988240A21A8005FE144 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515987240A21A8005FE144 /* Note.swift */; };
 		1851598A240A221F005FE144 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515989240A221F005FE144 /* Class.swift */; };
@@ -33,6 +35,8 @@
 		18353FCE2409757A00AB5AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18353FD02409757A00AB5AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18353FD62409825D00AB5AAC /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		18379360241F6BF500DC5134 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		18379362241F84AD00DC5134 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1848AABA2414B9CE0022D1DB /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		18515987240A21A8005FE144 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		18515989240A221F005FE144 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				18515989240A221F005FE144 /* Class.swift */,
 				18515987240A21A8005FE144 /* Note.swift */,
 				18AAEFF0241BDFA4004C3821 /* TextRecognitionManager.swift */,
+				18379360241F6BF500DC5134 /* RoundButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				18353FD62409825D00AB5AAC /* ClassViewController.swift */,
 				1851598B240A2440005FE144 /* NotesViewController.swift */,
 				1848AABA2414B9CE0022D1DB /* NoteViewController.swift */,
+				18379362241F84AD00DC5134 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,11 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1848AABB2414B9CE0022D1DB /* NoteViewController.swift in Sources */,
+				18379363241F84AD00DC5134 /* MainViewController.swift in Sources */,
 				18353FC32409757600AB5AAC /* AppDelegate.swift in Sources */,
 				18AAEFF1241BDFA4004C3821 /* TextRecognitionManager.swift in Sources */,
 				18353FC52409757600AB5AAC /* SceneDelegate.swift in Sources */,
 				1851598C240A2440005FE144 /* NotesViewController.swift in Sources */,
 				187C8BBE240AC743009ACAAC /* SwipeTableViewController.swift in Sources */,
+				18379361241F6BF500DC5134 /* RoundButton.swift in Sources */,
 				18353FD72409825D00AB5AAC /* ClassViewController.swift in Sources */,
 				1851598A240A221F005FE144 /* Class.swift in Sources */,
 				18515988240A21A8005FE144 /* Note.swift in Sources */,
